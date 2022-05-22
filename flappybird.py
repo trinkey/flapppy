@@ -159,7 +159,7 @@ def checkPipeMoveBack():
         resetRandoms(5)
 
 def birddie():
-    global bird, pipe1, pipe2, pipe3, pipe4, pipe5, start, birdvelocity, newGameStart, score
+    global bird, pipe1, pipe2, pipe3, pipe4, pipe5, start, birdvelocity, newGameStart, score, resetRandoms
     bird.goto(0, -150)
     birdvelocity = 0
     start = 0
@@ -181,6 +181,7 @@ def birddie():
     bird.goto(-200, 0)
     bird.shape("fbicons/fbstraight.gif")
     newGameStart(0)
+    resetRandoms()
     score = 0
 
 def checkIfDie():
